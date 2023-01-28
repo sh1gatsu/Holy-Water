@@ -9,25 +9,30 @@ interface Props {
   onClose: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
-const yearsToSwitch = [
-  2023, 2022, 2021, 2020, 2019,
-  2018, 2017, 2016, 2015, 2014,
-  2013, 2012, 2011, 2010, 2009,
-  2008, 2007, 2006, 2005, 2004,
-  2003, 2002, 2001, 2000, 1999,
-  1998, 1997, 1996, 1995]
+const yearCounter = () => {
+  const yearsToSwitch = [];
+  let initialValue = 2023;
+
+  while (initialValue >= 1990) {
+    yearsToSwitch.push(initialValue)
+    initialValue--;
+  }
+
+  return yearsToSwitch;
+}
+
+const yearsToSwitch = yearCounter();
 
 const monthToSwitch = [
   'January', 'February', 'March', 'April',
   'May', 'June', 'July', 'August',
   'September', 'October', 'November', 'December']
 
-
 export const SwiperSelect: React.FC<Props> = ({
   isOpen,
   onClose,
 }) => {
-  const {mainPoint, setMainPoint} = useContext(LocalStorageContext)
+  const { mainPoint, setMainPoint } = useContext(LocalStorageContext)
 
   const currentMonth = mainPoint.month()
   const currentYear = mainPoint.format('YYYY')
