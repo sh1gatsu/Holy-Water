@@ -5,7 +5,7 @@ implemented calendar that stores data in the localstorage, remembers the year yo
 [DEMO LINK](https://sh1gatsu.github.io/Holy-Water/) 
 
 To run this app on your device, you need:
-1) check node version, it shold be 14.18.2 !
+1) check node version, it should be 14.18.2 !
 2) write npm i to install all needed packages !
 3) write npm start to start local server !
 
