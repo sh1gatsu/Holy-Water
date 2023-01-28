@@ -31,7 +31,8 @@ export const EventsList: React.FC<Props> = ({visibleTitle, calendarEvent}) => {
           onClick={(event) => {
             event.stopPropagation();
             setAllEvents(prev => prev
-              .filter(localEvent => localEvent.id !== calendarEvent.id))
+              .filter(localEvent => localEvent.id !== calendarEvent.id));
+              setCurrentEvent(null);
           }}
         >
           x

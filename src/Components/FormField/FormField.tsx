@@ -244,6 +244,7 @@ export const FormField: React.FC<Props> = ({
             <button
               className='Form-field__button'
               type='submit'
+              onClick={() => setCurrentEvent(null)}
             >
               <img
                 className='Form-field__icon'
