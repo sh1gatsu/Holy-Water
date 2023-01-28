@@ -227,7 +227,8 @@ export const FormField: React.FC<Props> = ({
                 onClick={() => {
                   setAllEvents(prev => prev
                     .filter(localEvent => localEvent.id !== editEvent.id));
-                  setIsFormOpen(false)
+                  setIsFormOpen(false);
+                  setCurrentEvent(null);
                 }}
               >
                 <img
