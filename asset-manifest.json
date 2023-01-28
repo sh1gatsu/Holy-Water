@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Holy-Water/static/css/main.073c9b0a.css",
-    "main.js": "/Holy-Water/static/js/main.2e38fb86.js",
+    "main.css": "/Holy-Water/static/css/main.ed266cef.css",
+    "main.js": "/Holy-Water/static/js/main.f20493ad.js",
     "static/js/787.9b034917.chunk.js": "/Holy-Water/static/js/787.9b034917.chunk.js",
-    "static/media/logo.svg": "/Holy-Water/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/calendarIcon.png": "/Holy-Water/static/media/calendarIcon.499095e9ffe44e166d0d.png",
+    "static/media/save-icon.svg": "/Holy-Water/static/media/save-icon.bf00aaa4666cbcd82d2478423d9a3ea9.svg",
     "index.html": "/Holy-Water/index.html",
-    "main.073c9b0a.css.map": "/Holy-Water/static/css/main.073c9b0a.css.map",
-    "main.2e38fb86.js.map": "/Holy-Water/static/js/main.2e38fb86.js.map",
+    "main.ed266cef.css.map": "/Holy-Water/static/css/main.ed266cef.css.map",
+    "main.f20493ad.js.map": "/Holy-Water/static/js/main.f20493ad.js.map",
     "787.9b034917.chunk.js.map": "/Holy-Water/static/js/787.9b034917.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2e38fb86.js"
+    "static/css/main.ed266cef.css",
+    "static/js/main.f20493ad.js"
   ]
 }
