@@ -1,0 +1,149 @@
+.Form-field {
+  position: absolute;
+  width: 30%;
+  border-radius: 5px;
+  top: 7%;
+  left: 35%;
+  background: #b569dc;
+  z-index: 2;
+
+  transform: translateY(-200%);
+  transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 1400px) {
+    width: 50%;
+    left: 25%;
+  }
+
+  @media (max-width: 900px) {
+    width: 95%;
+    left: 2%;
+  }
+
+  &-open {
+    transform: translateY(0%);
+    box-shadow: 0 0 50px purple;
+  }
+
+  &-top {
+    border: 1px solid transparent;
+    position: relative;
+    min-height: 125px;
+  }
+
+  &-closer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    height: 42px;
+    width: 44px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eddff4;
+    border: 1px solid #d59beb;
+    color: black;
+
+    font-size: 20px;
+    transition: 0.3s;
+
+    &-active {
+      background-color: #d59beb;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &__title {
+    height: 35px;
+    margin: 0 5px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+    margin: 7px 5px;
+    font-size: 20px;
+
+    &-date {
+      margin: 0;
+      margin: 7px 0;
+    }
+  }
+
+  &__date-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+    border-bottom: 2px solid black;
+  }
+
+  &__time {
+    font-family: 'Roboto', sans-serif;
+    height: 17.5px;
+  }
+
+  &__description {
+    height: 60px;
+    resize: none;
+    margin: 0 5px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  &__button {
+    height: 50px;
+
+    height: 42px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eddff4;
+    border: 1px solid #d59beb;
+    color: black;
+
+    font-size: 20px;
+    transition: 0.3s;
+
+    &-active {
+      background-color: #d59beb;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &-block {
+      margin-top: 20px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+    }
+  }
+}

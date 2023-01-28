@@ -1,0 +1,52 @@
+.swiper {
+  height: 60px;
+  position: absolute;
+  background-color: #eddff4;
+  right: 0px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  transform: translateY(-110%);
+
+  transition: 0.3s;
+
+  &-open {
+    transform: translateY(0%)
+  }
+
+  &__selects {
+    display: flex;
+    gap: 5px;
+
+    &-select {
+      height: 40px;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
+  &__button {
+    margin-right: 15px;
+    height: 42px;
+    width: 44px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #b569dc;
+    border: 1px solid #b569dc;
+    color: #fff;
+
+    font-size: 20px;
+    transition: 0.3s;
+
+    &-active {
+      background-color: #9a2bd1;
+    }
+
+    &:hover {
+      background-color: #9a2bd1;
+      box-shadow: 0 0 10px purple;
+    }
+  }
+}

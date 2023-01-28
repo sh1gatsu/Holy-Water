@@ -1,0 +1,18 @@
+.body {
+  margin: 0 auto;
+  max-width: 1000px;
+  border: 1px solid black;
+  
+
+  &-blured {
+    filter: blur(3px);
+    pointer-events: none;
+  }
+
+  &__container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 120px);
+  }
+}
