@@ -15,7 +15,7 @@ interface Props {
 export const CalendarItem: React.FC<Props> = ({ date }) => {
   const [listOfEvents, setListOfEvents] = useState<eventItem[]>([])
 
-  const { setIsFormOpen, setGlobalData } = useContext(FormContext)
+  const { setIsFormOpen, setGlobalData, setCurrentEvent } = useContext(FormContext)
 
   const {allEvents, mainPoint} = useContext(LocalStorageContext)
 
@@ -38,6 +38,7 @@ export const CalendarItem: React.FC<Props> = ({ date }) => {
   const currentday = moment().format('YYYY-DDDD-MMMM');
 
   const onItemClick = () => {
+    setCurrentEvent(null);
     setGlobalData(date.format('YYYY-MM-DD'));
     setIsFormOpen(true);
   }
