@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import './App.scss';
+import { CalendarHeader } from './Components/CalendarHeader';
+import { CalendarBody } from './Components/CalendarBody';
+import moment from 'moment';
+import { FormField } from './Components/FormField';
+import { FormContext } from './Context/FormContext';
+
+moment.updateLocale('en', { week: { dow: 1 } })
 
 function App() {
+  const { currrentEvent } = useContext(FormContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <FormField editEvent={currrentEvent} />
+      <CalendarHeader />
+      <CalendarBody />
     </div>
   );
 }
