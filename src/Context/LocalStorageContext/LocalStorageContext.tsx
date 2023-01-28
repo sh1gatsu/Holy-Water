@@ -50,5 +50,4 @@ export const LocalStorageProvider: React.FC<Props> = ({ children }) => {
       {children}
     </LocalStorageContext.Provider>
   )
-
 }
