@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import './FormField.scss';
+import './FormComponent.scss';
 import classNames from 'classnames'
 import { LocalStorageContext } from '../../Context/LocalStorageContext';
 import { eventItem } from '../../Types/Event/EventItem';
@@ -11,7 +11,7 @@ interface Props {
   editEvent?: eventItem | null,
 }
 
-export const FormField: React.FC<Props> = ({
+export const FormComponent: React.FC<Props> = ({
   editEvent,
 }) => {
   const {

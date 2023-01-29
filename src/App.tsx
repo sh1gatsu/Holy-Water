@@ -3,7 +3,7 @@ import './App.scss';
 import { CalendarHeader } from './Components/CalendarHeader';
 import { CalendarBody } from './Components/CalendarBody';
 import moment from 'moment';
-import { FormField } from './Components/FormField';
+import { FormComponent } from './Components/FormComponent';
 import { FormContext } from './Context/FormContext';
 
 moment.updateLocale('en', { week: { dow: 1 } })
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className='App'>
-      <FormField editEvent={currrentEvent} />
+      <FormComponent editEvent={currrentEvent} />
       <CalendarHeader />
       <CalendarBody />
     </div>
